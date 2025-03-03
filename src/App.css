@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+/* Base styles for mobile (320px and up) */
+/* These styles apply by default, so no media query is needed */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  font-family: 'Roboto', serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@media (min-width: 320px) {
+  .default-margin {
+    margin: 0 16px 0 16px;
+  }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .default-flex {
+    flex-direction: column;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width: 768px) {
+  .default-margin {
+    margin: 0 20px 0 20px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (min-width: 1152px) {
+  .default-margin {
+    margin: 0 32px 0 32px;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  .web-nav {
+    display: flex;
+  }
+}
+
+@media (min-width: 1440px) {
+  /* .mobile-nav {
+    display: none;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .web-nav {
+    display: flex;
+  } */
+}
+
+@media (min-width: 1920px) {
+  .default-margin {
+    margin: 0 220px 0 220px;
   }
 }
