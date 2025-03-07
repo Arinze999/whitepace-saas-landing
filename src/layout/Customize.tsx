@@ -5,15 +5,15 @@ import Img from '../components/Img';
 
 const Customize = () => {
   return (
-    <div className="pt-[4rem] lg:pt-[6rem] h-fit lg:pb-[0] pb-[5rem]">
+    <div className="pt-[rem] lg:pt-[3em] h-fit lg:pb-[0] pb-[5rem]">
       <div className="default-margin">
         <div className="flex justify-center items-center flex-col-reverse lg:flex-row-reverse lg:justify-between lg:items-start xl:items-center 2xl:place-items-center lg:gap-[1rem]">
-          <div className="flex flex-col gap-5 justify-center lg:items-start items-center h-full">
-            <h1 className="text-[46px] md:text-[60px] font-[700] text-center lg:text-left lg:flex lg:flex-col">
+          <div className="flex flex-col gap-5 justify-center lg:items-end items-center h-full">
+            <h1 className="text-[46px] md:text-[60px] font-[700] text-center lg:text-right lg:flex lg:flex-col">
               Customize it to
               <Span text="your needs" />
             </h1>
-            <p className="text-center lg:text-left text-xl font-[400] leading-loose mb-[2rem] md:mb-[0rem]">
+            <p className="text-center lg:text-right text-xl font-[400] leading-loose mb-[2rem] md:mb-[0rem]">
               Customise the app with plugins, custom themes and multiple text
               editors (Rich Text or Markdown). Or create your own scripts and
               plugins using the Extension API.
